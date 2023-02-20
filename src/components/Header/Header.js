@@ -5,7 +5,7 @@ import NavItem, {NavItemDropDown} from '../NavItem/NavItem'
 const Header = () => {
   return (
     
-<div className="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top">
+<div className="navbar navbar-expand-md  navbar-dark   NavBar">
 
     <div className="container">
     <a href="#" className="navbar-brand">
