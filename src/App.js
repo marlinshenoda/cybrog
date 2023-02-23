@@ -1,13 +1,25 @@
 import './App.css' 
-import {Header, Footer, Container, Hero} from './components/Index'
+import { BrowserRouter as Router ,Route,Routes} from 'react-router-dom'
+import {Container} from './components/Index'
+import {Header,Footer} from './sections/index'
+import { Home, Profile } from './Pages/index'
+
 const App = () => {
 return (
 <>
-   <Header/>
+<Router>
+    <Header/>
    <Container>
-      <Hero/>
+      <Routes>
+         <Route path='/' element={<Home/>}/>
+         <Route path='/profile' element={  <Profile/>}/>
+
+      </Routes>
+    
    </Container>
    <Footer/>
+</Router>
+  
 
 </>
 )
