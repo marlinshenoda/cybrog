@@ -1,5 +1,5 @@
 import './Header.css'
-
+import {Link} from 'react-router-dom'
 import logo  from '../../assets/images/logo.png'
 import NavItem, {NavItemDropDown} from '../../components/NavItem/NavItem'
 const Header = () => {
@@ -16,7 +16,8 @@ const Header = () => {
     </button>
     <div className="collapse navbar-collapse" id="mainmenu">
         <ul className="navbar-nav ms-auto">
-            <NavItem ><a href="/" className="nav-link">Home</a></NavItem>
+            <NavItem ><Link to="/" className="nav-link">Home</Link> </NavItem>
+           
             <NavItem><a href="#features" className="nav-link">Browse</a></NavItem>
             <NavItemDropDown>
                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Details</a>
@@ -27,7 +28,7 @@ const Header = () => {
             </NavItemDropDown>
             <NavItem><a href="#faq" className="nav-link">Streams</a></NavItem>
 
-            <NavItem><a href="/profile" className="nav-link">Profile</a></NavItem>
+            <NavItem><Link to="/profile" className="nav-link">Profile</Link></NavItem>
         </ul>
     </div>
 </div>
