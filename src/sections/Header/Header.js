@@ -18,7 +18,7 @@ const Header = () => {
         <ul className="navbar-nav ms-auto">
             <NavItem ><Link to="/" className="nav-link">Home</Link> </NavItem>
            
-            <NavItem><a href="#features" className="nav-link">Browse</a></NavItem>
+            <NavItem><Link to="/browse" className="nav-link">Browse</Link></NavItem>
             <NavItemDropDown>
                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Details</a>
                 <ul className="dropdown-menu">
